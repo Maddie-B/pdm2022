@@ -48,7 +48,7 @@ function keyReleased()
   }    
 }
 
-function Released()
+function mouseReleased()
 {for (i = 0; i < count; i++)
   {
    character[i].drop();
@@ -101,11 +101,11 @@ class Character
 
     if (this.move == 0)
     {
-      image(this.spritesheet, 0, 0, 100, 100, 0, 0, 80, 80);
+      image(this.spriteSheet, 0, 0, 100, 100, 0, 0, 80, 80);
     }
     else
     { 
-      image(this.spritesheet, 0, 0, 100, 100, 80 * (this.sx + 1), 0, 80, 80);
+      image(this.spriteSheet, 0, 0, 100, 100, 80 * (this.sx + 1), 0, 80, 80);
     }
     if (frameCount % 5 == 0)
     {
@@ -156,7 +156,7 @@ class Character
   }
 
   drop()
-  {if (mouseX > this.x - 40 && mouseX < this.x + 40 && mouseY > this.y -40 && mouseY < this.y + 40)
+  {if (dragged)
     {
      this.stop();
      this.dropped = true;
