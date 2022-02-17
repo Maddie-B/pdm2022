@@ -6,9 +6,9 @@ let count = 10;
 
 function preload()
 {
- spriteSheet = loadImage("SpelunkyGuy.png");
- spriteSheet2 = loadImage("Green.png");
- spriteSheet3 = loadImage("Ninja.png");
+  spriteSheet = loadImage("SpelunkyGuy.png");
+  spriteSheet2 = loadImage("Green.png");
+  spriteSheet3 = loadImage("Ninja.png");
 } 
 
 function setup() 
@@ -101,11 +101,14 @@ class Character
 
     if (this.move == 0)
     {
-      image(this.spriteSheet, 0, 0, 100, 100, 0, 0, 80, 80);
-    }
-    else
-    { 
-      image(this.spriteSheet, 0, 0, 100, 100, 80 * (this.sx + 1), 0, 80, 80);
+      if (this.grabbed)
+      {
+        image(this.spriteSheet, 0, 0, 100, 100, 0, 0, 80, 80);
+      }
+      else
+      { 
+        image(this.spriteSheet, 0, 0, 100, 100, 80 * (this.sx + 1), 0, 80, 80);
+      }
     }
     if (frameCount % 5 == 0)
     {
