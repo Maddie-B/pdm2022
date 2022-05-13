@@ -1,0 +1,13 @@
+I'm going to design a game that is similar to Snake. 
+The player will control a snake using buttons or a joystick
+(whichever I deem is better for the gameplay). 
+Every time they collect an object, use the buttons or joystick to turn, 
+or bump into things, there will be a unique sound that is 
+specific to the event. 
+On the screen, you will see where the object is generated and 
+watch yourself control the snake.
+The snake will grow bigger as you collect items. 
+
+I plan to make this more detailed and less blocky in the future developement.
+
+https://youtube.com/shorts/_bd-W6pE878?feature=share
